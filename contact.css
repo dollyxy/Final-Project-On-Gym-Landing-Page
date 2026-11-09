@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid greenyellow;
+    padding-bottom: 15px;
+    font-family: "Inter", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    gap: 10px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 12px;
+    color: grey;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+#contact{
+    border-bottom: 2px solid greenyellow;
+    padding-bottom: 10px;
+}
+.nav-links a:hover {
+    color: greenyellow;
+    background-color: black;
+}
+
+.button a{
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.button a:hover{
+    color: greenyellow;
+    border: 2px solid greenyellow;
+
+}

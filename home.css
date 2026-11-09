@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-family: "Teko", sans-serif;
+}
+
+
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid greenyellow;
+    padding-bottom: 15px;
+    font-family: "Inter", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.hero {
+    background: linear-gradient(rgba(17, 17, 17, 0.85),
+            rgba(17, 17, 17, 0.85)), url('./Images/Background-img-.avif'), no-repeat fixed black;
+    min-height: 440px;
+    padding-top: 105px;
+}
+
+.hero-content {
+    min-height: 440px;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgba(84, 83, 83, 0.85);
+    font-family: "Teko", sans-serif;
+}
+
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    gap: 10px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 12px;
+    color: grey;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+#home{
+    border-bottom: 2px solid greenyellow;
+}
+.nav-links a:hover {
+    color: greenyellow;
+    background-color: black;
+}
+
+.button a{
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.button a:hover{
+    /* background-color: rgb(46, 49, 42); */
+    color: greenyellow;
+    border: 2px solid greenyellow;
+
+}
+
+span.info-text {
+    color: greenyellow;
+    font-family: "Inter", sans-serif;
+    font-weight: 15px;
+}
+
+h1 {
+    color: white;
+    font-weight: bolder;
+}
+
+h1.info-header {
+    color: greenyellow;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+p {
+    color: grey;
+    padding-bottom: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.days,
+.programs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.days a,
+.programs a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.programs a {
+    color: white;
+    border: 2px solid rgb(46, 49, 42);
+    font-weight: bold;
+}
+
+.days a {
+    background-color: greenyellow;
+    color: black;
+    font-weight: bold;
+}
+
+.days a:hover {
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px solid rgb(46, 49, 42);
+    transition: 0.3s;
+}
+
+.programs a:hover {
+    background-color: greenyellow;
+    color: black;
+    transition: 0.3s;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    padding-top: 30px;
+}
+
+h3 {
+    color: greenyellow;
+
+}
+
+.stats-card {
+    display: flex;
+    align-items: center;
+    Flex-direction: column;
+    font-size: 20px;
+}
+#container-results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    padding: 10rem 3rem 0;
+    font-family: "Inter", sans-serif;
+}
+.results,
+.workout-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.workout-header{
+    padding-top: 5rem;
+}
+.results p:first-child,
+.workout-header p{
+    color: greenyellow;
+}
+.results p:nth-of-type(2),
+.results p:first-child,
+.workout-header p{
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: bold;
+    width: 700px;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+#fourCards,
+.excercise{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+.excercise{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.Why-Choose-Us {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    color: white;
+    background-color: #2b2a2a;
+    border-radius: 8px;
+    padding: 30px;
+}
+.Why-Choose-Us:hover{
+    border: 1px  solid greenyellow;
+    transition: 0.3s;
+    transform: translate(-5px);
+}
+.why-choose-us-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: rgba(49, 63, 27, 0.963);
+    border-radius: 8px;
+    padding: 10px;
+}
+.why-choose-us-icon img {
+    width: 35px;
+    height: 35px;
+}
+.Why-Choose-Us h4{
+    font-size: 25px;
+    width: 200px;
+    margin: 10px;
+    text-align: left;
+}
+.Why-Choose-Us p{
+    color: gray;
+    font-size: 17px;
+    line-height: 1.6;
+    width: 230px;
+}
+.work-class{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #1b1b1b;
+}
+.image{
+    width: 100%;
+    min-height: 157px;
+}
+.image img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.excercise-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+}
+.minutes{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.minutes p:first-child,
+.minutes p:last-child{
+    background-color: greenyellow;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    /* height: 10px; */
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.minutes p:last-child{
+    background-color: #353535;
+    color: white;
+}
+.excercise-info-message h3{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+.excercise-info-message p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #353535;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: greenyellow;
+    border: 2px  solid greenyellow;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.testimonials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #1b1b1b;
+}
+
+.testimonials img {
+    width: 50px;
+    margin: 20px;
+
+}
+
+.testimonials p:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.6;
+    width: 850px;
+    font-size: 25px;
+}
+
+
+/* 
+
+.results {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.89);
+    padding-top: 40px;
+
+}
+
+.mid-text {
+    text-align: center;
+    color: greenyellow;
+    font-family: "Inter", sans-serif;
+
+}
+
+.result-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: black;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+
+}
+
+.result-card-info {
+    background-color: rgba(17, 17, 17, 0.85);
+    border: 2px solid rgb(46, 49, 42);
+    padding: 20px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.result-card-info:hover {
+    border-color: rgba(204, 255, 0, 0.737);
+    transform: translateY(-5px);
+    transition: 0.5s;
+    background-color: rgba(17, 17, 17, 0.85);
+
+}
+
+.result-card-info img {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(204, 255, 0, 0.1);
+    border-radius: 6px;
+
+}
+
+.result-card-info p {
+    font-size: 0.95rem;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+}
+.workouts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.workout-header{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+} */
