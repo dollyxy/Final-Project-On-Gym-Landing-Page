@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Teko:wght@300..700&display=swap');
 
 * {
     margin: 0;
@@ -43,7 +43,7 @@ header {
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
-#pricing{
+.nav-links a[aria-current="page"] {
     border-bottom: 2px solid greenyellow;
 }
 .nav-links a:hover {
@@ -57,10 +57,199 @@ header {
     font-size: 15px;
     padding: 12px 20px;
     border-radius: 5px;
+    border: 2px solid transparent;
 }
 
 .button a:hover{
+    /* background-color: rgb(46, 49, 42); */
     color: greenyellow;
     border: 2px solid greenyellow;
+    transition: 0.3s ease-in-out;
 
 }
+
+body {
+    background-color: black;
+}
+
+section {
+    min-height: 100vh;
+    padding: 140px 40px 40px;
+    color: white;
+}
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.plans > h4 {
+  color: greenyellow;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-family: "Inter", sans-serif;
+}
+.plans > h1 {
+    color: white;
+    font-size: 2.6rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-family: "Teko", sans-serif;
+    margin-bottom: 8px;
+}
+.plans > p {
+    color: grey;
+    max-width: 600px;
+    font-size: 1rem;
+    margin: 10px;
+    font-family: "Inter", sans-serif;
+}
+.plans-type{
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 60px;
+}
+
+.pricing-info {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 32px;
+}
+
+.pricing-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 40px;
+    background-color: #1f1f1f;
+    border: 1px solid #303030;
+    border-radius: 14px;
+}
+
+.pricing-card:nth-child(2) {
+    border-color: greenyellow;
+    box-shadow: 0 0 24px rgba(173, 255, 47, 0.12);
+}
+
+.pricing-card:nth-child(2)::before {
+    content: "MOST POPULAR";
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 24px;
+    border-radius: 999px;
+    background-color: greenyellow;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    box-shadow: 0 0 25px rgba(204, 255, 0, 0.15);
+}
+
+.pricing-header h3 {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+
+.princing-price {
+    margin-top: 16px;
+    color: greenyellow;
+    font-family: "Inter", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.princing-price span {
+    margin-left: 4px;
+    color: grey;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.pricing-features {
+    flex: 1;
+    margin: 28px 0;
+    list-style: none;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #333;
+    color: #a0a0a0;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+}
+
+.pricing-features .material-symbols-outlined {
+    flex: 0 0 auto;
+    color: greenyellow;
+    font-size: 1.4rem;
+}
+
+.pricing-card > a {
+    display: block;
+    padding: 16px;
+    border: 2px solid #303030;
+    border-radius: 6px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.pricing-card > a:hover,
+.pricing-card:nth-child(2) > a {
+    border-color: greenyellow;
+    background-color: transparent;
+    color: white;
+}
+
+.pricing-card:nth-child(2) > a:hover {
+    background-color: transparent;
+    color: greenyellow;
+}
+
+/* @media (max-width: 900px) {
+    .pricing-info {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+    }
+
+    .pricing-card {
+        padding: 32px;
+    }
+}
+
+@media (max-width: 620px) {
+    .plans {
+        padding: 140px 20px 40px;
+    }
+
+    .plans > h1 {
+        font-size: 2.2rem;
+    }
+
+    .pricing-info {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .pricing-card {
+        padding: 28px;
+    }
+} */

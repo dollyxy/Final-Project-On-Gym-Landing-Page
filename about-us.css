@@ -5,8 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 header {
     background-color: black;
     padding: 20px;
@@ -43,9 +41,10 @@ header {
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
-#about{
+.nav-links a[aria-current="page"] {
     border-bottom: 2px solid greenyellow;
 }
+
 .nav-links a:hover {
     color: greenyellow;
     background-color: black;
@@ -57,12 +56,14 @@ header {
     font-size: 15px;
     padding: 12px 20px;
     border-radius: 5px;
+    border: 2px solid transparent;
 }
 
 .button a:hover{
     /* background-color: rgb(46, 49, 42); */
     color: greenyellow;
     border: 2px solid greenyellow;
+    transition: 0.3s ease-in-out;
 
 }
 

@@ -18,6 +18,7 @@ header {
     padding: 20px;
     display: flex;
     cursor: pointer;
+    cursor: pointer;
     align-items: center;
     justify-content: space-between;
     border-bottom: 5px solid greenyellow;
@@ -28,7 +29,6 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-
 }
 
 .hero {
@@ -67,27 +67,30 @@ header {
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
-#home{
+.nav-links a[aria-current="page"] {
     border-bottom: 2px solid greenyellow;
 }
+
 .nav-links a:hover {
     color: greenyellow;
     background-color: black;
 }
 
-.button a{
+.button a {
     text-decoration: none;
-    color: grey;
+    color: black;
+    background-color: greenyellow;
     font-size: 15px;
     padding: 12px 20px;
     border-radius: 5px;
+    border: 2px solid transparent;
 }
 
-.button a:hover{
-    /* background-color: rgb(46, 49, 42); */
-    color: greenyellow;
-    border: 2px solid greenyellow;
-
+.button a:hover {
+    color: black;
+    background-color: greenyellow;
+    border: 2px solid green;
+    transition: 0.3s ease-in-out;
 }
 
 span.info-text {
@@ -325,7 +328,8 @@ h3 {
     font-size: 16px;
     line-height: 1.6;
 }
-a{
+.excercise-info a,
+.work-class a {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -339,9 +343,10 @@ a{
     font-weight: bold;
 }
 
-a:hover{
+.excercise-info a:hover,
+.work-class a:hover {
     color: greenyellow;
-    border: 2px  solid greenyellow;
+    border: 2px solid greenyellow;
     cursor: pointer;
     transition: 0.3s;
 }
